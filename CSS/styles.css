@@ -22,6 +22,8 @@ html {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --shadow-button: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --line-footer: #ececec;
+  --card-border: #eeeeee;
 }
 
 img {
@@ -40,6 +42,7 @@ body {
 /* Шапка */
 .header {
   background-color: var(--add-color);
+  border-bottom: 1px solid var(--line-footer);
 }
 .header .container {
   display: flex;
@@ -99,12 +102,11 @@ body {
 .contact-nav .item + .item {
   margin-left: 50px;
 }
-.contact-nav .item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .contact-nav-mt {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   text-decoration: none;
@@ -127,6 +129,7 @@ body {
 }
 .contact-nav {
   display: flex;
+  align-self: center;
   margin-left: auto;
 }
 /* main */
@@ -181,6 +184,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.features {
+  padding-top: 91px;
+  padding-bottom: 91px;
+}
 .section-special {
   width: 270px;
   margin-top: 0;
@@ -194,8 +201,6 @@ body {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 91px;
-  padding-bottom: 91px;
 
   font-style: normal;
   font-weight: normal;
@@ -218,7 +223,7 @@ body {
 }
 
 /* Заняття */
-.s-work {
+.img-work {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -282,10 +287,10 @@ body {
   margin-bottom: 30px;
 }
 .item-team {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .section-team-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
 
@@ -352,8 +357,8 @@ body {
 }
 /* Портфоліо */
 .portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   font-family: Roboto;
   font-style: normal;
@@ -424,7 +429,7 @@ body {
 }
 .card-content {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--card-border);
 }
 .card-title {
   color: var(--title-text-color);
