@@ -126,7 +126,7 @@ body {
 .contact-nav-t:focus {
   color: var(--accent-color);
 }
-.contact-nav-m::before {
+/*.contact-nav-m::before {
   content: "";
 
   display: inline-block;
@@ -177,7 +177,7 @@ body {
 
   background-image: url(../images/smartphonehover.svg);
   background-size: contain;
-}
+}*/
 .site-nav,
 .contact-nav {
   font-style: normal;
@@ -398,7 +398,22 @@ body {
 .team {
   margin-right: 0;
 }
+/* Клієнти */
+.section-client {
+  padding-top: 99px;
+}
+.client {
+  margin-bottom: 50px;
 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
 /* Футер */
 .footer-color {
   padding-top: 60px;
