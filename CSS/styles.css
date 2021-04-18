@@ -107,6 +107,8 @@ body {
 }
 .contact-nav {
   align-items: baseline;
+  display: flex;
+  list-style: none;
 }
 .contact-nav-m,
 .contact-nav-t {
@@ -125,6 +127,11 @@ body {
 .contact-nav-t:hover,
 .contact-nav-t:focus {
   color: var(--accent-color);
+}
+.mail-icon {
+  padding: 0;
+  border: none;
+  color: #2a2a2a;
 }
 /*.contact-nav-m::before {
   content: "";
