@@ -444,19 +444,32 @@ body {
 }
 .client-logo {
   display: flex;
-  justify-content: center;
 }
 .client-company {
-  width: 170px;
-  height: 90px;
+  display: flex;
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-.company-logo {
   justify-content: center;
+  margin-right: 30px;
+}
+.client-company:hover {
+  border: 1px solid #2196f3;
+}
+
+.company-logo {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
 }
 .icon-logo {
-  fill: #afb1b8;
+  fill: currentColor;
+}
+.icon-logo:hover {
+  fill: #2196f3;
 }
 /* Футер */
 .footer-color {
