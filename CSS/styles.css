@@ -27,6 +27,7 @@ html {
   --line-footer: #ececec;
   --card-border: #eeeeee;
   --icon-bg: rgba(255, 255, 255, 0.1);
+  --icon-color: #afb1b8;
 }
 
 img {
@@ -106,8 +107,9 @@ body {
   margin-left: 50px;
 }
 .contact-nav {
-  align-items: baseline;
+  align-items: center;
   display: flex;
+
   list-style: none;
 }
 .contact-nav-m,
@@ -385,15 +387,15 @@ body {
 .icons {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  padding: 12px;
+  background-color: var(--add-color);
   border-radius: 50%;
   margin-right: 10px;
 }
 .icons:hover {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 /*.icon {
   text-align: center;
@@ -401,28 +403,28 @@ body {
   align-items: center;
 }*/
 .icon-instagram {
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 .icon-instagram:hover {
-  fill: #ffffff;
+  fill: var(--add-color);
 }
 .icon-twitter {
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 .icon-twitter:hover {
-  fill: #ffffff;
+  fill: var(--add-color);
 }
 .icon-facebook {
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 .icon-facebook:hover {
-  fill: #ffffff;
+  fill: var(--add-color);
 }
 .icon-linkedin {
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 .icon-linkedin:hover {
-  fill: #ffffff;
+  fill: var(--add-color);
 }
 /* Клієнти */
 .section-client {
@@ -451,8 +453,8 @@ body {
 }
 .client-company {
   display: flex;
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   justify-content: center;
   margin-right: 30px;
@@ -461,7 +463,7 @@ body {
   margin-right: 0;
 }
 .client-company:hover {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
 }
 
 .company-logo {
@@ -470,13 +472,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
+  color: var(--icon-color);
 }
 .icon-logo {
   fill: currentColor;
 }
 .icon-logo:hover {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 /* Футер */
 .footer-color {
@@ -550,32 +552,28 @@ body {
   display: flex;
   align-items: baseline;
 }
-.social {
-  display: inline-block;
+.social-logo {
+  display: flex;
+  justify-content: center;
   height: 44px;
   width: 44px;
-  margin-right: 10px;
-
-  background-color: var(--icon-bg);
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
+  margin-right: 10px;
 }
-.social:hover {
+.social-logo:hover {
   background-color: var(--accent-color);
 }
-.instagram {
-  background-image: url(../images/instagramw.svg);
-}
-.twitter {
-  background-image: url(../images/twitterw.svg);
-}
-.facebook {
-  background-image: url(../images/facebookw.svg);
-}
-.linkedin {
-  background-image: url(../images/linkedinw.svg);
+.social-logo:last-child {
   margin-right: 0;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--add-color);
+}
+.icon-footer {
+  fill: currentColor;
 }
 /* Портфоліо */
 .portfolio {
