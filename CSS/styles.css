@@ -112,6 +112,8 @@ body {
 }
 .contact-nav-m,
 .contact-nav-t {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -381,9 +383,11 @@ body {
   justify-content: center;
 }
 .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   background-color: #ffffff;
   border-radius: 50%;
   margin-right: 10px;
@@ -452,6 +456,9 @@ body {
   border-radius: 4px;
   justify-content: center;
   margin-right: 30px;
+}
+.client-company:last-child {
+  margin-right: 0;
 }
 .client-company:hover {
   border: 1px solid #2196f3;
