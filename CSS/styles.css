@@ -600,8 +600,8 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.flex-element:hover/* ,
-.flex-element:focus */ {
+.flex-element:hover /*,
+.flex-element:focus*/ {
   box-shadow: var(--shadow-card);
 }
 /* .card:hover,
@@ -617,6 +617,7 @@ body {
 .card-link {
   text-decoration: none;
 }
+.card-link:hover,
 .card-link:focus {
   box-shadow: var(--shadow-card);
 }
