@@ -607,8 +607,12 @@ body {
 .card {
   display: flex;
 }
-.card:hover,
+/* .card:hover,
 .card:focus {
+  box-shadow: var(--shadow-card);
+} */
+.card-link:hover,
+.card-link:focus {
   box-shadow: var(--shadow-card);
 }
 .flex-element:nth-child(3n) {
