@@ -357,7 +357,13 @@ body {
   margin-top: 16px;
   justify-content: center;
 }
-.icons {
+.social-icons__item {
+  margin-right: 10px;
+}
+.social-icons__item:last-child {
+  margin-right: 0;
+}
+.social-icons__link {
   display: flex;
   align-items: center;
   width: 44px;
@@ -365,44 +371,14 @@ body {
   padding: 12px;
   background-color: var(--add-color);
   border-radius: 50%;
-  margin-right: 10px;
   color: var(--icon-color);
 }
-.icons:hover {
+.social-icons__link:hover,
+.social-icons__link:focus {
   color: var(--add-color);
   background-color: var(--accent-color);
 }
-/*.icon {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}*/
-.icon-instagram {
-  fill: currentColor;
-}
-.icon-instagram:hover,
-.icon-instagram:focus {
-  fill: currentColor;
-}
-.icon-twitter {
-  fill: currentColor;
-}
-.icon-twitter:hover,
-.icon-twitter:focus {
-  fill: currentColor;
-}
-.icon-facebook {
-  fill: currentColor;
-}
-.icon-facebook:hover,
-.icon-facebook:focus {
-  fill: currentColor;
-}
-.icon-linkedin {
-  fill: currentColor;
-}
-.icon-linkedin:hover,
-.icon-linkedin:focus {
+.social-icons__icon {
   fill: currentColor;
 }
 /* Клієнти */
@@ -538,16 +514,18 @@ body {
   align-items: baseline;
 }
 .social-logo {
+  margin-right: 10px;
+}
+.social {
   display: flex;
   justify-content: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  margin-right: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--icon-bg);
 }
-.social-logo:hover,
-.social-logo:focus {
+.social:hover,
+.social:focus {
   background-color: var(--accent-color);
 }
 .social-logo:last-child {
@@ -622,10 +600,14 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.flex-element:hover,
-.flex-element:focus {
+.flex-element:hover/* ,
+.flex-element:focus */ {
   box-shadow: var(--shadow-card);
 }
+/* .card:hover,
+.card:focus {
+  box-shadow: var(--shadow-card);
+} */
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -634,6 +616,9 @@ body {
 }
 .card-link {
   text-decoration: none;
+}
+.card-link:focus {
+  box-shadow: var(--shadow-card);
 }
 .card-content {
   padding: 20px 24px;
