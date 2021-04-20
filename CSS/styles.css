@@ -251,7 +251,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.antenna {
+.icon-antenna {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -260,7 +260,7 @@ body {
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.clock {
+/*.clock {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -286,7 +286,7 @@ body {
 
   background-color: #f5f4fa;
   border-radius: 4px;
-}
+}*/
 .section-feature-title {
   color: var(--title-text-color);
 
@@ -393,8 +393,10 @@ body {
   background-color: var(--add-color);
   border-radius: 50%;
   margin-right: 10px;
+  color: var(--icon-color);
 }
 .icons:hover {
+  color: var(--add-color);
   background-color: var(--accent-color);
 }
 /*.icon {
@@ -403,28 +405,28 @@ body {
   align-items: center;
 }*/
 .icon-instagram {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
 .icon-instagram:hover {
-  fill: var(--add-color);
+  fill: currentColor;
 }
 .icon-twitter {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
 .icon-twitter:hover {
-  fill: var(--add-color);
+  fill: currentColor;
 }
 .icon-facebook {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
 .icon-facebook:hover {
-  fill: var(--add-color);
+  fill: currentColor;
 }
 .icon-linkedin {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
 .icon-linkedin:hover {
-  fill: var(--add-color);
+  fill: currentColor;
 }
 /* Клієнти */
 .section-client {
@@ -474,11 +476,14 @@ body {
   justify-content: center;
   color: var(--icon-color);
 }
+.company-logo:hover {
+  color: var(--accent-color);
+}
 .icon-logo {
   fill: currentColor;
 }
 .icon-logo:hover {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 /* Футер */
 .footer-color {
@@ -559,6 +564,7 @@ body {
   width: 44px;
   border-radius: 50%;
   margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .social-logo:hover {
   background-color: var(--accent-color);
