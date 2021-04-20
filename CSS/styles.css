@@ -257,36 +257,9 @@ body {
   margin-bottom: 30px;
   padding: 25px 100px;
 
-  background-color: #f5f4fa;
+  background-color: var(--team-color);
   border-radius: 4px;
 }
-/*.clock {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-.diagram {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-.astronaut {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}*/
 .section-feature-title {
   color: var(--title-text-color);
 
@@ -407,25 +380,29 @@ body {
 .icon-instagram {
   fill: currentColor;
 }
-.icon-instagram:hover {
+.icon-instagram:hover,
+.icon-instagram:focus {
   fill: currentColor;
 }
 .icon-twitter {
   fill: currentColor;
 }
-.icon-twitter:hover {
+.icon-twitter:hover,
+.icon-twitter:focus {
   fill: currentColor;
 }
 .icon-facebook {
   fill: currentColor;
 }
-.icon-facebook:hover {
+.icon-facebook:hover,
+.icon-facebook:focus {
   fill: currentColor;
 }
 .icon-linkedin {
   fill: currentColor;
 }
-.icon-linkedin:hover {
+.icon-linkedin:hover,
+.icon-linkedin:focus {
   fill: currentColor;
 }
 /* Клієнти */
@@ -464,7 +441,8 @@ body {
 .client-company:last-child {
   margin-right: 0;
 }
-.client-company:hover {
+.client-company:hover,
+.client-company:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -476,13 +454,15 @@ body {
   justify-content: center;
   color: var(--icon-color);
 }
-.company-logo:hover {
+.company-logo:hover,
+.company-logo:focus {
   color: var(--accent-color);
 }
 .icon-logo {
   fill: currentColor;
 }
-.icon-logo:hover {
+.icon-logo:hover,
+.icon-logo:focus {
   fill: currentColor;
 }
 /* Футер */
@@ -566,7 +546,8 @@ body {
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-logo:hover {
+.social-logo:hover,
+.social-logo:focus {
   background-color: var(--accent-color);
 }
 .social-logo:last-child {
@@ -626,9 +607,6 @@ body {
 
   cursor: pointer;
 }
-/*.portfolio-button:last-child {
-  margin-right: 0;
-}*/
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
@@ -644,7 +622,8 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.flex-element:hover {
+.flex-element:hover,
+.flex-element:focus {
   box-shadow: var(--shadow-card);
 }
 .flex-element:nth-child(3n) {
